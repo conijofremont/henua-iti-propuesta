@@ -1,0 +1,99 @@
+/* Homepage styled to follow the client's supplied reference composition. */
+.reference-home{--ink:#172c50;--muted:#77756e;--paper:#f1eddf;--white:#fffdf7;--green:#203c6a;--green-dark:#172c50;--gold:#a8844b;--line:#dfd7c7;background:var(--paper)}
+.reference-home .site-header{position:sticky;top:0;z-index:1000;height:clamp(62px,6.3vw,88px);padding-inline:clamp(18px,5vw,78px);background:#f8f5ed;box-shadow:0 2px 10px #172c5010}
+.reference-home .main-nav{gap:clamp(6px,.9vw,15px);font-size:clamp(8px,.9vw,12px)}
+.reference-home .nav-book{padding:clamp(8px,1vw,14px) clamp(9px,1.25vw,18px);white-space:nowrap}
+.reference-home .brand{gap:8px}.reference-home .brand-mark{width:clamp(30px,3.4vw,43px);height:clamp(30px,3.4vw,43px)}
+.reference-hero-shell{position:relative;padding-bottom:35px;background:var(--white)}
+.reference-home .reference-hero{height:clamp(270px,32vw,510px);min-height:0;max-height:none;background:#374131}
+.reference-home .hero-image{object-position:center 54%;animation:none}
+.reference-home .hero-shade{background:linear-gradient(90deg,rgba(12,19,16,.64),rgba(12,19,16,.16) 72%),linear-gradient(0deg,rgba(14,19,15,.28),transparent 60%)}
+.reference-home .hero-content{left:clamp(32px,7vw,110px);top:49%;max-width:min(51%,590px);transform:translateY(-50%)}
+.reference-home .hero-content .eyebrow{font-size:clamp(7px,.75vw,10px);letter-spacing:.18em;margin-bottom:12px}
+.reference-home .hero h1{font-size:clamp(48px,6.4vw,88px);line-height:.95;letter-spacing:-.045em}
+.reference-home .hero-copy{font-size:clamp(11px,1.1vw,15px);line-height:1.55;max-width:375px;margin:14px 0 19px}
+.reference-home .hero-actions{gap:12px}.reference-home .hero-actions .button{min-height:38px;font-size:clamp(9px,.85vw,12px);padding-inline:14px}
+.reference-home .button-outline{background:rgba(19,37,71,.28);color:#fff;border:1px solid rgba(255,255,255,.9)}
+.hero-rating{position:absolute;right:clamp(22px,6vw,90px);bottom:52px;display:flex;flex-direction:column;gap:4px;color:#fff;text-shadow:0 1px 8px #0009;text-align:right}
+.hero-rating b{font-size:clamp(12px,1.2vw,16px)}.hero-rating b span{color:#e7b851;letter-spacing:.08em}.hero-rating a{font-size:clamp(8px,.7vw,10px);color:#fff}
+.reference-home .booking-wrap{position:absolute;left:clamp(22px,7vw,110px);right:clamp(22px,7vw,110px);bottom:-16px;z-index:4;padding:0;background:transparent}
+.reference-home .booking-bar{transform:none;margin:0;padding:10px;background:#fffdf7;box-shadow:0 7px 22px #1a254017;grid-template-columns:1fr 1fr 1fr 1fr auto;gap:0}
+.reference-home .booking-intro{padding-inline:10px}.reference-home .booking-intro .eyebrow{font-size:7px;margin-bottom:3px}.reference-home .booking-intro strong{font-size:16px;white-space:nowrap}
+.reference-home .booking-field{min-height:38px;padding:2px 9px}.reference-home .booking-field span{font-size:7px}.reference-home .booking-field input,.reference-home .booking-field select{font-size:10px}
+.reference-home .booking-bar .button{min-height:38px;font-size:9px;padding-inline:12px}
+.reference-benefits{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;padding:38px clamp(22px,5vw,78px) 24px;background:#efecdf;text-align:center}
+.reference-benefits>a{display:flex;min-width:0;flex-direction:column;align-items:center;justify-content:center;color:#5c4a2e;line-height:1.25}
+.reference-benefits .benefit-icon{display:grid;place-items:center;width:28px;height:28px;margin-bottom:6px;color:#705b35}
+.reference-benefits .benefit-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.reference-benefits b{max-width:145px;font-size:clamp(8px,.82vw,11px);font-weight:500;line-height:1.3}
+.review-proof{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:13px clamp(22px,5vw,78px);background:#fffdf7;border-top:1px solid #e8e1d3;border-bottom:1px solid #e8e1d3}
+.review-score{display:flex;align-items:center;gap:10px;flex:0 0 auto}.google-mark{font:bold 23px Arial,sans-serif;color:#4285f4}.review-score b{display:block;font-size:14px;color:var(--ink)}.review-score i{color:#c3943c;font-style:normal;letter-spacing:.08em}.review-score small{display:block;font-size:8px;color:var(--muted);margin-top:2px}
+.review-reasons{display:flex;align-items:center;justify-content:center;gap:clamp(7px,1.6vw,22px);flex-wrap:wrap}.review-reasons p{margin:0;font:italic 15px var(--serif);color:var(--ink)}.review-reasons span{font-size:9px;color:#655841;white-space:nowrap}.review-link{font-size:9px;font-weight:600;color:var(--green-dark);white-space:nowrap}.review-link b{margin-left:5px}
+.reference-home main section[id]{scroll-margin-top:100px}
+.reference-home .reference-cabins{padding:38px clamp(24px,5vw,78px) 40px;background:#fbfaf5}
+.reference-home .section-heading{align-items:center;gap:30px;margin-bottom:24px}
+.reference-home .section-heading h2{font-size:clamp(30px,3.6vw,48px);line-height:1.03;letter-spacing:-.035em}
+.reference-home .section-heading .eyebrow{font-size:8px;margin-bottom:8px}
+.reference-home .heading-aside{width:min(255px,34%);padding:0}.reference-home .heading-aside p{font-size:clamp(9px,.86vw,12px);line-height:1.55;margin-bottom:10px}
+.reference-home .text-link{font-size:9px;padding-bottom:5px}.reference-home .cabin-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.reference-home .cabin-card{box-shadow:0 2px 8px #392f1a0d}.reference-home .cabin-photo{height:clamp(120px,16vw,225px)}
+.reference-home .photo-count{bottom:7px;left:8px;padding:5px 7px;font-size:7px}
+.reference-home .cabin-info{padding:10px 11px 11px}.reference-home .cabin-info h3{font-size:clamp(15px,1.6vw,22px);font-weight:600;color:#342d23}
+.reference-home .cabin-desc{font-size:9px;line-height:1.45;min-height:26px;margin:5px 0}
+.reference-home .cabin-meta{font-size:8px;margin-top:7px;padding-top:7px}.reference-home .cabin-availability{display:block;background:#765927;color:white;text-align:center;padding:8px 5px;margin-top:8px;font-size:9px}
+.reference-home .cabin-amenities{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;margin-top:7px;text-align:center;color:#716247;font-size:clamp(6px,.62vw,8px);line-height:1.2}
+.reference-home .cabin-amenities span{min-width:0}
+.reference-home .reference-experience{height:clamp(180px,18vw,285px);min-height:0}
+.reference-home .reference-experience .experience-image img{object-position:center 50%}
+.reference-home .experience-overlay{background:linear-gradient(90deg,rgba(12,22,21,.73),rgba(12,22,21,.06) 85%)}
+.reference-home .experience-content{left:clamp(24px,5vw,78px);max-width:430px}.reference-home .experience-content .eyebrow{font-size:8px;margin-bottom:7px}
+.reference-home .experience h2{font-size:clamp(33px,4vw,54px);line-height:1}
+.reference-home .experience-content>p:not(.eyebrow){font-size:9px;line-height:1.45;margin:8px 0 11px;max-width:340px}
+.reference-home .experience-content .button{min-height:30px;font-size:8px;padding-inline:11px}
+.reference-home .experience-caption{font-size:7px;right:clamp(18px,4vw,60px);bottom:12px}
+.reference-home .reference-services{padding:28px clamp(18px,4vw,62px) 24px;background:#f2eee2}
+.reference-home .services-heading{margin-bottom:14px}.reference-home .services-heading h2{font-size:clamp(24px,3vw,39px)}
+.reference-home .journey-tiles{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.reference-home .journey-tile{height:clamp(100px,13vw,180px)}
+.reference-home .journey-tile>span{left:10px;bottom:43px;font-size:6px}.reference-home .journey-tile h3{left:10px;right:9px;bottom:9px;font-size:clamp(12px,1.3vw,17px);line-height:1.05}
+.reference-home .journey-tile b{font-size:10px;margin-left:3px}
+.reference-home .reference-story{min-height:0;grid-template-columns:1fr 1fr;background:#fbfaf5}
+.reference-home .reference-story-photo{min-height:0;height:clamp(180px,22vw,305px)}
+.reference-home .reference-story-copy{padding:22px clamp(20px,4vw,60px)}
+.reference-home .reference-story-copy .eyebrow{font-size:7px;margin-bottom:8px}
+.reference-home .reference-story-copy h2{font-size:clamp(25px,3vw,40px);line-height:1.03;margin-bottom:10px}
+.reference-home .reference-story-copy>p:not(.eyebrow){font-size:9px;line-height:1.5;margin:0 0 10px}
+.reference-home .reference-story-copy .story-quote{font-size:17px;margin-top:10px}
+.reference-home .reference-story-copy .story-quote small{font-size:7px}
+.reference-home .reference-gallery{padding:25px clamp(18px,4vw,62px) 28px;background:#f2eee2}
+.reference-home .gallery-heading{margin-bottom:12px}.reference-home .gallery-heading .eyebrow{font-size:7px;margin-bottom:6px}
+.reference-home .gallery h2{font-size:clamp(25px,3vw,40px)}
+.reference-home .gallery-grid{height:clamp(85px,11vw,150px);grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+.reference-home .reference-contact{padding:28px clamp(22px,5vw,78px) 20px}
+.reference-home .contact-top{padding-bottom:20px}.reference-home .contact h2{font-size:clamp(30px,4vw,52px)}
+.reference-home .contact-bottom{padding-top:13px}.reference-home .site-footer{min-height:60px;height:auto}
+@media(max-width:760px){
+  .reference-home .site-header{position:sticky;top:0;height:68px;padding-inline:18px}.reference-home .menu-toggle{flex:0 0 40px}
+  .reference-home .main-nav{top:67px;font-size:13px;gap:0}.reference-home .main-nav>a:not(.nav-book){padding:11px 0}
+  .reference-home .hero{height:470px;max-height:calc(100svh - 68px)}.reference-home .hero-content{left:23px;right:23px;top:45%;max-width:90%}
+  .reference-home .hero h1{font-size:clamp(48px,13vw,68px)}.reference-home .hero-copy{font-size:13px;max-width:300px}
+  .hero-rating{right:18px;bottom:52px}.reference-hero-shell{padding-bottom:90px}
+  .reference-home .booking-wrap{left:14px;right:14px;bottom:0}.reference-home .booking-bar{grid-template-columns:1fr 1fr;padding:9px;gap:6px}
+  .reference-home .booking-intro{grid-column:1/3;padding:2px 4px}.reference-home .booking-field{border:1px solid var(--line)!important;min-height:49px;padding:5px 7px}
+  .reference-home .booking-field input,.reference-home .booking-field select{font-size:10px}.reference-home .booking-bar .button{grid-column:1/3}
+  .reference-benefits{grid-template-columns:repeat(3,1fr);gap:16px 7px;padding:22px 14px}.reference-benefits .benefit-icon{width:24px;height:24px}.reference-benefits .benefit-icon svg{width:22px;height:22px}.reference-benefits b{font-size:9px}
+  .review-proof{display:grid;grid-template-columns:auto 1fr;gap:10px 14px;padding:13px 15px}.review-score{gap:7px}.google-mark{font-size:20px}.review-score b{font-size:12px}.review-score small{font-size:7px}.review-reasons{justify-content:flex-start;gap:5px 9px}.review-reasons p{width:100%;font-size:13px}.review-reasons span{font-size:8px}.review-link{grid-column:1/3;justify-self:end}
+  .reference-home .reference-cabins{padding:34px 16px}.reference-home .section-heading{align-items:flex-start;flex-direction:column;gap:10px;margin-bottom:15px}
+  .reference-home .section-heading h2{font-size:34px}.reference-home .heading-aside{width:auto;max-width:340px}
+  .reference-home .cabin-grid{grid-template-columns:1fr;gap:12px}.reference-home .cabin-photo{height:220px}
+  .reference-home .cabin-info h3{font-size:20px}.reference-home .cabin-desc{font-size:11px;min-height:0}
+  .reference-home .reference-experience{height:330px}.reference-home .experience-content{left:20px;right:18px}
+  .reference-home .experience h2{font-size:47px}.reference-home .experience-content>p:not(.eyebrow){font-size:11px}
+  .reference-home .reference-services{padding:32px 16px}.reference-home .services-heading h2{font-size:30px}
+  .reference-home .journey-tiles{grid-template-columns:1fr 1fr;gap:8px}.reference-home .journey-tile{height:155px}
+  .reference-home .journey-tile h3{font-size:16px}.reference-home .reference-story{grid-template-columns:1fr}
+  .reference-home .reference-story-photo{height:280px}.reference-home .reference-story-copy{padding:34px 22px}
+  .reference-home .reference-story-copy h2{font-size:36px}.reference-home .reference-story-copy>p:not(.eyebrow){font-size:11px}
+  .reference-home .reference-gallery{padding:30px 16px}.reference-home .gallery-grid{height:auto;grid-template-columns:1fr 1fr;grid-auto-rows:130px}
+  .reference-home .gallery-heading{align-items:flex-start;flex-direction:column}.reference-home .contact{padding:45px 20px 30px}
+}

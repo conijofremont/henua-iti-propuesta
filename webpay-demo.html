@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ed">
+  <meta name="description" content="Demostración visual del flujo propuesto de pago Webpay para Henua Iti. No procesa pagos.">
+  <title>Demo visual Webpay | Henua Iti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="prototype.css">
+  <style>
+    .demo-page{min-height:calc(100vh - 150px);padding:46px 20px 70px;background:#f3f0e8}
+    .demo-card{width:min(680px,100%);margin:0 auto;background:#fff;border:1px solid #dedbd4;box-shadow:0 14px 42px #1e2a4014}
+    .demo-warning{padding:12px 18px;background:#fff3d7;color:#684d1f;border-bottom:1px solid #eddfbf;font-size:12px;line-height:1.5;text-align:center}
+    .demo-head{padding:24px 30px 20px;border-bottom:1px solid #e5e2dc;display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .demo-brand{font-size:22px;font-weight:700;color:#b32525;letter-spacing:-.04em}.demo-brand small{display:block;color:#686868;font-size:10px;letter-spacing:.03em;font-weight:500;margin-top:4px}
+    .demo-lock{color:#52604d;font-size:11px;white-space:nowrap}
+    .demo-body{padding:30px}.demo-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:28px;color:#777;font-size:10px;text-align:center}
+    .demo-steps span{padding:9px 5px;border-bottom:2px solid #ddd}.demo-steps span:first-child{border-color:#b3262d;color:#302b28;font-weight:700}
+    .demo-body h1{margin:0 0 8px;font:400 32px/1.1 'Playfair Display',Georgia,serif;color:#283754}.demo-body>p{margin:0 0 22px;color:#656565;font-size:13px;line-height:1.6}
+    .demo-summary{display:flex;justify-content:space-between;gap:16px;padding:17px 18px;margin:20px 0;background:#f7f5f0;border:1px solid #e5e1d8;font-size:13px}.demo-summary strong{color:#202b40}
+    .demo-option{display:flex;align-items:center;gap:13px;padding:16px;border:1px solid #c8c8c8;margin:10px 0;background:#fff;color:#2b2b2b;font-size:14px}
+    .demo-option input{accent-color:#b3262d}.demo-option b{margin-left:auto;font-size:11px;color:#666}.demo-option.selected{border-color:#b3262d;background:#fffafa}
+    .demo-card input[type=radio]{width:17px;height:17px}.demo-card-logos{font-weight:700;color:#253c78;letter-spacing:.04em}
+    .demo-action{width:100%;min-height:48px;margin-top:15px;background:#a9282d;color:#fff;border:0;font:600 14px 'DM Sans',Arial,sans-serif;cursor:pointer}
+    .demo-action:hover{background:#8f1f24}.demo-live-link{display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none;text-align:center;margin-top:10px;background:#fff;color:#a9282d;border:1px solid #a9282d}.demo-live-link:hover{background:#fff7f7}.demo-return{display:none;margin-top:16px;padding:16px;background:#edf5ed;border:1px solid #cfdfcf;color:#34543b;font-size:13px;line-height:1.55}.demo-return.is-visible{display:block}
+    .demo-caption{margin:17px 0 0;color:#777;font-size:10px;line-height:1.5;text-align:center}
+    .demo-back{display:block;width:max-content;margin:22px auto 0;color:#203c6a;font-size:12px;font-weight:600}
+    @media(max-width:600px){.demo-page{padding:20px 12px 48px}.demo-head,.demo-body{padding:20px}.demo-body h1{font-size:28px}.demo-steps{font-size:8px}.demo-summary{font-size:11px}}
+  </style>
+</head>
+<body>
+  <header class="site-header reference-header">
+    <a class="brand" href="index.html" aria-label="Henua Iti, inicio"><img class="brand-logo" src="assets/henua-logo-referencia.png" alt="Henua Iti, cabañas en Rapa Nui"></a>
+    <nav class="main-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="cabanas.html">Cabañas</a><a href="servicios.html">Servicios</a><a href="reservas.html">Reservas</a></nav>
+  </header>
+  <main class="demo-page">
+    <section class="demo-card" aria-labelledby="demo-title">
+      <div class="demo-warning"><strong>Prototipo visual · No es una pasarela real.</strong> No ingreses datos bancarios. Esta demostración no cobra ni transmite información.</div>
+      <div class="demo-head"><div class="demo-brand">Webpay<small>Experiencia de pago de ejemplo para Henua Iti</small></div><span class="demo-lock">🔒 Flujo referencial</span></div>
+      <div class="demo-body">
+        <div class="demo-steps" aria-label="Pasos de ejemplo"><span>1 · Revisar reserva</span><span>2 · Elegir pago</span><span>3 · Volver a Henua Iti</span></div>
+        <h1 id="demo-title">Completa tu reserva</h1>
+        <p>Así podría verse una alternativa Webpay dentro del proceso de reserva, sujeta a la pasarela y configuración que Henua Iti apruebe.</p>
+        <div class="demo-summary"><span>Reserva Henua Iti<br><small>Fechas y monto se definirían al confirmar</small></span><strong>Monto referencial</strong></div>
+        <label class="demo-option selected"><input type="radio" name="payment" checked><span>Tarjeta de crédito o débito</span><b class="demo-card-logos">VISA · MC</b></label>
+        <label class="demo-option"><input type="radio" name="payment"><span>Transferencia bancaria</span><b>Alternativa</b></label>
+        <button class="demo-action" id="demo-submit" type="button">Simular el siguiente paso</button>
+        <a class="demo-action demo-live-link" href="https://proyecto-ejemplo-node.transbankdevelopers.cl/webpay-plus" target="_blank" rel="noopener noreferrer">Probar flujo de integración en Transbank ↗</a>
+        <div class="demo-return" id="demo-return" aria-live="polite"><strong>Demostración completada.</strong> No se procesó ningún pago ni se enviaron datos. La integración real debe validarse y configurarse con Henua Iti, Cloudbeds y el proveedor de pago.</div>
+        <p class="demo-caption">El botón de prueba abre el ejemplo oficial de Transbank Developers en otra pestaña. Es un ambiente de integración de prueba y no está conectado a Henua Iti. Usa solo los datos de prueba indicados por Transbank; nunca tus credenciales bancarias reales.</p>
+      </div>
+    </section>
+    <a class="demo-back" href="reservas.html">← Volver a reservas Henua Iti</a>
+  </main>
+  <footer class="site-footer"><a href="index.html">Henua Iti · Rapa Nui</a><a href="reservas.html">Volver a reservas ↗</a></footer>
+  <script>document.getElementById('demo-submit').addEventListener('click',function(){document.getElementById('demo-return').classList.add('is-visible');this.textContent='Simulación, sin cobro';this.disabled=true;});document.querySelectorAll('.demo-option').forEach(function(option){option.addEventListener('change',function(){document.querySelectorAll('.demo-option').forEach(function(item){item.classList.remove('selected');});option.classList.add('selected');});});</script>
+</body>
+</html>
